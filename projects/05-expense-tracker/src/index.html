@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 Expense Tracker</h1>
+    </header>
+
+    <div class="summary-cards">
+      <div class="card income-card">
+        <div class="card-label">Total Income</div>
+        <div id="totalIncome" class="card-value">0.00</div>
+      </div>
+      <div class="card expense-card">
+        <div class="card-label">Total Expenses</div>
+        <div id="totalExpense" class="card-value">0.00</div>
+      </div>
+      <div class="card balance-card">
+        <div class="card-label">Balance</div>
+        <div id="balance" class="card-value">0.00</div>
+      </div>
+    </div>
+
+    <div class="add-section">
+      <h2>Add Transaction</h2>
+      <div class="form-grid">
+        <select id="typeSelect">
+          <option value="expense">Expense</option>
+          <option value="income">Income</option>
+        </select>
+        <input type="number" id="amountInput" placeholder="Amount" step="0.01" min="0" />
+        <input type="text" id="categoryInput" placeholder="Category" />
+        <input type="text" id="descInput" placeholder="Description (optional)" />
+        <input type="date" id="dateInput" />
+        <button id="addBtn" class="btn-primary">Add</button>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="exportCSV" class="btn-secondary">Export CSV</button>
+      <button id="exportJSON" class="btn-secondary">Export JSON</button>
+      <button id="importBtn" class="btn-secondary">Import</button>
+      <input type="file" id="importFile" accept=".json" style="display: none;" />
+    </div>
+
+    <div class="content-grid">
+      <div class="section">
+        <h2>Transactions</h2>
+        <div id="transactionsList" class="transactions-list"></div>
+      </div>
+
+      <div class="section">
+        <h2>Categories</h2>
+        <div id="categorySummary" class="category-summary"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

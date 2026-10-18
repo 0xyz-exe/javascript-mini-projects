@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Playground</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>JavaScript Playground</h1>
+      <p class="warning">⚠️ Sandboxed execution - not an absolute security boundary</p>
+    </header>
+
+    <div class="main-content">
+      <div class="editor-section">
+        <div class="section-header">
+          <h2>Code Editor</h2>
+          <div class="controls">
+            <button id="runBtn" class="btn btn-primary">Run Code</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+          </div>
+        </div>
+        <textarea id="codeEditor" spellcheck="false">// Write your JavaScript code here
+console.log('Hello, JavaScript Playground!');
+
+const sum = (a, b) => a + b;
+console.log('Sum:', sum(5, 3));</textarea>
+      </div>
+
+      <div class="output-section">
+        <div class="section-header">
+          <h2>Console Output</h2>
+          <button id="clearBtn" class="btn btn-small">Clear</button>
+        </div>
+        <div id="output" class="output-display"></div>
+      </div>
+    </div>
+
+    <div class="examples-section">
+      <h3>Example Snippets</h3>
+      <div class="examples-grid">
+        <button class="example-btn" data-example="arrays">Arrays</button>
+        <button class="example-btn" data-example="objects">Objects</button>
+        <button class="example-btn" data-example="promises">Promises</button>
+        <button class="example-btn" data-example="classes">Classes</button>
+        <button class="example-btn" data-example="destructuring">Destructuring</button>
+        <button class="example-btn" data-example="async">Async/Await</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="playground.js"></script>
+</body>
+</html>

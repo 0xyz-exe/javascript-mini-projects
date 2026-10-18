@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌤️ Weather Dashboard</h1>
+      <p class="subtitle">Powered by Open-Meteo free API</p>
+    </header>
+
+    <div class="search-section">
+      <div class="input-group">
+        <input type="number" id="latInput" placeholder="Latitude" step="0.0001" />
+        <input type="number" id="lonInput" placeholder="Longitude" step="0.0001" />
+      </div>
+      <div class="button-group">
+        <button id="fetchBtn" class="btn-primary">Get Weather</button>
+        <button id="demoBtn" class="btn-secondary">Use Demo Data</button>
+      </div>
+    </div>
+
+    <div class="examples">
+      <span>Quick locations:</span>
+      <button class="example-location" data-lat="40.7128" data-lon="-74.0060">New York</button>
+      <button class="example-location" data-lat="51.5074" data-lon="-0.1278">London</button>
+      <button class="example-location" data-lat="35.6762" data-lon="139.6503">Tokyo</button>
+      <button class="example-location" data-lat="-33.8688" data-lon="151.2093">Sydney</button>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">
+      <div class="spinner"></div>
+      <p>Fetching weather data...</p>
+    </div>
+
+    <div id="error" class="error" style="display: none;"></div>
+
+    <div id="currentWeather" class="current-weather" style="display: none;"></div>
+
+    <div id="forecast" class="forecast-section" style="display: none;"></div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

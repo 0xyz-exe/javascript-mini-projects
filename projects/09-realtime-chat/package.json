@@ -1,0 +1,7 @@
+{
+  "name": "realtime-chat",
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

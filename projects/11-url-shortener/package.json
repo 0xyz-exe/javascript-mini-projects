@@ -1,0 +1,7 @@
+{
+  "name": "url-shortener",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^11.7.0"
+  }
+}

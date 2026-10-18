@@ -1,0 +1,16 @@
+{
+  "name": "javascript-mini-projects",
+  "version": "1.0.0",
+  "description": "15+ professional JavaScript mini projects demonstrating browser APIs, async programming, Node.js, testing, and more",
+  "type": "module",
+  "scripts": {
+    "test": "node --test projects/**/tests/*.test.js",
+    "test:verbose": "node --test --test-reporter=spec projects/**/tests/*.test.js"
+  },
+  "keywords": ["javascript", "nodejs", "projects", "portfolio"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

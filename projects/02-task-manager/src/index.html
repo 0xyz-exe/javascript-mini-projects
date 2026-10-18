@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Manager</h1>
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-label">Total</span>
+          <span id="totalTasks" class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Active</span>
+          <span id="activeTasks" class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Completed</span>
+          <span id="completedTasks" class="stat-value">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="add-task">
+      <input type="text" id="taskInput" placeholder="What needs to be done?" />
+      <button id="addBtn" class="btn-primary">Add Task</button>
+    </div>
+
+    <div class="controls">
+      <div class="filters">
+        <select id="statusFilter">
+          <option value="all">All Tasks</option>
+          <option value="active">Active</option>
+          <option value="completed">Completed</option>
+        </select>
+
+        <select id="priorityFilter">
+          <option value="all">All Priorities</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+
+        <input type="text" id="searchInput" placeholder="Search tasks..." />
+      </div>
+
+      <div class="actions">
+        <select id="sortSelect">
+          <option value="createdAt-desc">Newest First</option>
+          <option value="createdAt-asc">Oldest First</option>
+          <option value="priority-desc">Priority High→Low</option>
+          <option value="priority-asc">Priority Low→High</option>
+        </select>
+
+        <button id="exportBtn" class="btn-secondary">Export</button>
+        <button id="importBtn" class="btn-secondary">Import</button>
+        <input type="file" id="importFile" accept=".json" style="display: none;" />
+      </div>
+    </div>
+
+    <div id="taskList" class="task-list"></div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
