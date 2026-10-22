@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d14">
+  <meta name="description" content="NEXUS ARCADE — a collection of free, playable browser games.">
+  <title>NEXUS ARCADE — Play something great</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./extra-games.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Nexus Arcade home"><span class="brand-mark">N</span><span>NEXUS<span class="brand-soft"> ARCADE</span></span></a>
+      <p class="nav-label">DISCOVER</p>
+      <nav class="nav-list">
+        <a href="#home" data-nav="home" class="nav-link active"><span>⌂</span> Home</a>
+        <a href="#games" data-nav="games" class="nav-link"><span>▦</span> All games <b id="game-count" class="nav-count">12</b></a>
+        <a href="#favorites" data-nav="favorites" class="nav-link"><span>♡</span> Favorites</a>
+        <a href="#recent" data-nav="recent" class="nav-link"><span>◷</span> Recently played</a>
+      </nav>
+      <p class="nav-label nav-label-spaced">YOUR ARCADE</p>
+      <nav class="nav-list">
+        <a href="#stats" data-nav="stats" class="nav-link"><span>▤</span> My stats</a>
+        <a href="#achievements" data-nav="achievements" class="nav-link"><span>✧</span> Achievements</a>
+        <a href="#settings" data-nav="settings" class="nav-link"><span>⚙</span> Settings</a>
+        <a href="#about" data-nav="about" class="nav-link"><span>ⓘ</span> About & help</a>
+      </nav>
+      <div class="sidebar-foot"><span class="online-dot"></span> All games. No downloads.<small>Built for quick breaks.</small></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <header class="topbar">
+        <button class="mobile-brand" data-action="home"><span class="brand-mark">N</span> NEXUS ARCADE</button>
+        <div class="crumb" id="crumb">YOUR ARCADE <span>/</span> HOME</div>
+        <div class="top-actions"><button class="icon-button" data-action="toggle-theme" aria-label="Toggle light theme" title="Toggle theme">◐</button><span class="avatar" aria-label="Local player">P</span></div>
+      </header>
+      <div id="view" aria-live="polite"></div>
+      <footer>© NEXUS ARCADE <span>•</span> Play locally. Your stats stay on this device.</footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

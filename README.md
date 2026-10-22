@@ -1,6 +1,6 @@
 # JavaScript Mini Projects
 
-15+ professional JavaScript projects demonstrating browser APIs, async programming, Node.js, testing, and real-time communication.
+16+ professional JavaScript projects demonstrating browser APIs, async programming, Node.js, testing, and real-time communication.
 
 ## 📋 Project List
 
@@ -21,6 +21,7 @@
 | 13 | [Performance Analyzer](projects/13-performance-analyzer) | Web performance metrics | JavaScript, Fetch API |
 | 14 | [Algorithm Visualizer](projects/14-algorithm-visualizer) | Interactive algorithm visualization | JavaScript, Canvas/DOM |
 | 15 | [Local Search Engine](projects/15-local-search-engine) | Search for local text files | Node.js, Inverted Index |
+| 16 | [Nexus Arcade](projects/16-nexus-arcade) | Browser-based arcade with 51 playable games | HTML, CSS, JavaScript, Canvas/DOM |
 
 ## 🚀 Getting Started
 
@@ -44,7 +45,7 @@ cd projects/11-url-shortener && npm install && cd ../..
 
 ### Running Projects
 
-**Browser Projects (01-05, 10, 14):**
+**Browser Projects (01-05, 10, 14, 16):**
 ```bash
 # Open the index.html file in your browser
 # Example:
@@ -91,7 +92,7 @@ javascript-mini-projects/
 │   │   ├── src/
 │   │   └── tests/
 │   ├── 02-task-manager/
-│   └── ... (15 projects total)
+│   └── ... (16 projects total)
 └── .gitignore
 ```
 
