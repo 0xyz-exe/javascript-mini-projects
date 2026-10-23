@@ -2,6 +2,22 @@
 
 16+ professional JavaScript projects demonstrating browser APIs, async programming, Node.js, testing, and real-time communication.
 
+Repository: https://github.com/0xyz-exe/javascript-mini-projects
+
+## Screenshots
+
+### Nexus Arcade (51 Playable Browser Games)
+![Nexus Arcade](docs/screenshots/01_nexus_arcade.png)
+
+### Interactive JS Code Playground
+![JS Playground](docs/screenshots/02_js_playground.png)
+
+### Open-Meteo Weather Dashboard
+![Weather Dashboard](docs/screenshots/03_weather_dashboard.png)
+
+### Algorithm Visualizer
+![Algorithm Visualizer](docs/screenshots/04_algorithm_visualizer.png)
+
 ## 📋 Project List
 
 | # | Project | Description | Technologies |
@@ -35,7 +51,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/javascript-mini-projects.git
+git clone https://github.com/0xyz-exe/javascript-mini-projects.git
 cd javascript-mini-projects
 
 # Install dependencies (for projects that need them)
